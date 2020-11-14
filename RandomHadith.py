@@ -23,6 +23,7 @@ def get_vals(book):
 
 def get_hadith_link():
 	book =  random.choice(["bukhari" , "muslim"])
+	book = "bukhari"
 	vals = get_vals(book)
 	sub_book = random.randint(1,len(vals))
 	hadith = random.randint(1,vals[sub_book - 1]+1)
